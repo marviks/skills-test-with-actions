@@ -33,8 +33,7 @@ jobs:
         with:
             GITHUB_TOKEN: ${{ github.token }}
             MINIMUM_GREEN: 90
-        MINIMUM_ORANGE: 70
+            MINIMUM_ORANGE: 70
 
       - name: Fail if below threshold
         run: coverage report --fail-under=90
-        
